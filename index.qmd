@@ -1,0 +1,404 @@
+---
+execute: 
+    enabled: false
+title: "HR Brand of Kyiv School of Economics"
+author:
+    - name: "Tymofii Muraviov"
+      email: [tmuraviov@kse.org.ua]
+      affiliations: ["Tymofii Mylovanov’s Office — R&D Department"]
+format: 
+  html:
+    code-fold: true
+    code-summary: "Show code"
+    toc: true
+    toc-depth: 3
+    theme: cosmo
+    fig-width: 10
+    fig-height: 6
+date: today
+---
+
+# Методологічний звіт: Аналіз бренду роботодавця KSE
+
+## 1. Мета дослідження:
+
+Цілі:
+
+-   зібрати та систематизувати всю відкриту інформацію про KSE як роботодавця з позиції потенційного кандидата
+-   виконання 4.1, 4.2, 4.3 завдання із документу [Аудит EB ресурсів і комунікацій](https://docs.google.com/document/d/1UEcxRD4iFffGtJPVLhjkyjFCj6jG8WLy/edit#heading=h.9a408ld7bi1y)
+
+Ключове питання: **«Що кандидат може дізнатись про KSE до подачі резюме?»**.
+
+**Підпитання:**
+
+1.  Яка присутність KSE в соціальних мережах?
+2.  Що доступно на офіційних сайтах?
+3.  Як KSE згадується в медіа?
+
+## 2. Об'єкт і предмет
+
+Об'єкт: Київська школа економіки (KSE) — всі підрозділи:
+
+-   KSE University
+-   KSE Institute
+-   KSE Foundation
+-   KSE Graduate Business School (GBS)
+-   Tymofii Mylovanov's brand
+
+Предмет: публічна комунікація KSE, що формує бренд роботодавця.
+
+## 3. Часові рамки
+
+Аналіз соцмереж: вересень–листопад 2025 (3 місяці) Медіа-моніторинг: вересень–листопад 2025 (3 місяці) [Сайт](https://careers.kse.ua/): актуальний стан на момент дослідження.
+
+## 4. Методи та інструменти:
+
+### 4.1 Інвентаризація соціальних мереж
+
+-   [Перелік](https://docs.google.com/spreadsheets/d/1SMNTcwiKg2ex7UllweIV5CwhftsspIoqPfNc4A9Nnts/edit?gid=28845859#gid=28845859) соціальних мереж які належать Київській Школі Економіки був написаний у ручну, а також із допомогою PerplexityAI відбулась перевірка повноцінності переліку.
+-   Парсинг та отримання постів відбувалось задопомогою сервісу [apify](https://apify.com/), а саме: [facebook-scraper](https://apify.com/apify/facebook-posts-scraper), [linkedin-scraper](https://apify.com/harvestapi/linkedin-company-posts), [instagram-scraper](https://apify.com/apify/instagram-post-scraper), [youtube-transcript-scraper](topaz_sharingan/Youtube-Transcript-Scraper). Налатштування: TimeFrame -\> Posts newer than -\> Absolute -\> 2025-09-01.
+
+<details>
+
+<summary>Facebook URLs</summary>
+
+```         
+https://www.facebook.com/KyivSchoolOfEconomics/
+https://www.facebook.com/people/KSE-university/61572402636622/
+https://www.facebook.com/KSEFoundation/
+```
+
+</details>
+
+<details>
+
+<summary>LinkedIn URLs:</summary>
+
+```         
+https://ua.linkedin.com/school/kse-kyiv-school-of-economics/
+https://ua.linkedin.com/company/kse-institute
+https://www.linkedin.com/company/kse-foundation
+https://www.linkedin.com/company/kse-gbs
+```
+
+</details>
+
+<details>
+
+<summary>Instagram URLs:</summary>
+
+```         
+https://www.instagram.com/kse.ua/
+https://www.instagram.com/kse_foundation/
+https://www.instagram.com/kse.proftech/
+https://www.instagram.com/kse_gbs/
+```
+
+</details>
+
+<details>
+
+<summary>Youtube URLs:</summary>
+
+```         
+https://www.youtube.com/watch?v=gfbwx7Sl7ms
+https://www.youtube.com/watch?v=VjzyVFn75NM
+https://www.youtube.com/watch?v=UCiCdAar5CA
+https://www.youtube.com/watch?v=NsPmEC8gieo
+https://www.youtube.com/watch?v=WUUg55RAN7g
+https://www.youtube.com/watch?v=8UP2V0SWfVU
+https://www.youtube.com/watch?v=v-6xckCmAMI
+https://www.youtube.com/watch?v=p4HY9YCa7Uo
+https://www.youtube.com/watch?v=1cGFgF570DM
+https://www.youtube.com/watch?v=1_xKUE7aD80
+https://www.youtube.com/watch?v=aXrQ5wDT0H0
+https://www.youtube.com/watch?v=4kSNCpCech4
+https://www.youtube.com/watch?v=LO2Cnm9em9k
+https://www.youtube.com/watch?v=aIADUJUtLGI
+https://www.youtube.com/watch?v=WX8O9RcU7ec
+https://www.youtube.com/watch?v=gdOvA5bbNMQ
+https://www.youtube.com/watch?v=sy9od2EsKUM
+https://www.youtube.com/watch?v=v9fFFiE-C98
+https://www.youtube.com/watch?v=3Pitj57s60A
+https://www.youtube.com/watch?v=uwT8UTkYhSw
+https://www.youtube.com/watch?v=7g03MaGUHJc
+https://www.youtube.com/watch?v=hdx8BA6uKsE
+https://www.youtube.com/watch?v=UJMWQn3Zp0g
+```
+
+</details>
+
+**Що збирали по кожній сторінці:**
+
+-   Назва сторінки.
+-   Текст публікації/транскрипт відео для Ютуб платформи.
+-   Дата публікації.
+-   Посилання на публікацію.
+-   Підрозділ KSE, який веде сторінку.
+
+Інструменти:
+
+-   Ручний огляд профілів
+-   Apify (скрапінг постів)
+-   Excel для консолідації
+
+### 4.2 Контент-аналіз постів
+
+Метод: категоризація контенту за рубриками. Вибірка: всі пости за жовтень–листопад 2025.
+
+Категорії (визначені індуктивно після первинного огляду): `Освіта`, `Новини`, `Вплив`(проєкти, ініціативи), `Вакансії`, `Інші`.
+
+Процес: - Вивантаження постів через `Apify`. - `Google Sheets` для очистки експортованих данних, видаленню завйвих стовпців. - Написання Python програми яка проходиться по кожному із записів у наших `.csv` файлах для кожної із платформ та беручи стовпець `content` надсилає його `gemini-2.0-flash`. У відповідь отримує категорію яку присвоює у новий стовпець.
+
+Python code:
+
+```{python}
+#| label: py-categories
+#| eval: false
+ 
+"""
+Класифікація контенту KSE через Gemini API
+Оптимізовано під rate limits: 15 RPM для безкоштовного тарифу
+"""
+
+import pandas as pd
+import google.generativeai as genai
+import time
+from concurrent.futures import ThreadPoolExecutor
+import asyncio
+
+# Конфігурація
+API_KEY = "секрет"
+INPUT_FILE = "media_sources.xlsx"
+OUTPUT_FILE = "media_sources_classified.xlsx"
+SKIP_SHEET = "what_do_we_have"
+
+# Категорії для класифікації
+CATEGORIES = """
+1. Освіта - Вступ/Програми, академічні досягнення, партнерства з університетами
+2. Вплив - Фонд/Збори, Дослідження/Аналітика, Соціальні проєкти
+3. Кар'єра - вакансії, меморандуми/партнерства з компаніями/працедавцями
+4. Новини - Комунікація, Привітання/Свята, Реакція на новини
+5. Ком'юніті - Студентське життя, Випускники/Alumni
+6. Інші - якщо не пасує до жодної з попередніх категорій
+"""
+
+# Ініціалізація Gemini
+genai.configure(api_key=API_KEY)
+model = genai.GenerativeModel('gemini-2.0-flash')
+
+def classify_single(content: str) -> str:
+    """Класифікує один рядок контенту"""
+    if not content or pd.isna(content) or str(content).strip() == "":
+        return "Інші"
+
+    prompt = f"""Класифікуй цей контент у ОДНУ категорію. Відповідь - ТІЛЬКИ назва категорії українською, нічого більше.
+
+Категорії:
+{CATEGORIES}
+
+Контент для класифікації:
+{str(content)[:1500]}
+
+Категорія:"""
+
+    try:
+        response = model.generate_content(
+            prompt,
+            generation_config=genai.types.GenerationConfig(
+                max_output_tokens=20,
+                temperature=0.1
+            )
+        )
+        result = response.text.strip()
+
+        # Нормалізація відповіді
+        valid_categories = ["Освіта", "Вплив", "Кар'єра", "Новини", "Ком'юніті", "Інші"]
+        for cat in valid_categories:
+            if cat.lower() in result.lower():
+                return cat
+        return "Інші"
+    except Exception as e:
+        print(f"Помилка API: {e}")
+        return "Інші"
+
+
+def classify_batch(contents: list[str], batch_size: int = 5) -> list[str]:
+    """
+    Класифікує batch контенту одним запитом для економії API calls.
+    Gemini flash дозволяє до 15 RPM на безкоштовному тарифі.
+    """
+    if not contents:
+        return []
+
+    # Формуємо batch prompt
+    items_text = "\n---\n".join([
+        f"[{i+1}] {str(c)[:500]}"
+        for i, c in enumerate(contents)
+        if c and not pd.isna(c)
+    ])
+
+    prompt = f"""Класифікуй кожен елемент в ОДНУ категорію. 
+Формат відповіді: номер - категорія (по одному на рядок, без пояснень)
+
+Категорії:
+{CATEGORIES}
+
+Елементи:
+{items_text}
+
+Відповіді:"""
+
+    try:
+        response = model.generate_content(
+            prompt,
+            generation_config=genai.types.GenerationConfig(
+                max_output_tokens=200,
+                temperature=0.1
+            )
+        )
+
+        # Парсинг відповіді
+        lines = response.text.strip().split('\n')
+        results = ["Інші"] * len(contents)
+        valid_categories = ["Освіта", "Вплив", "Кар'єра", "Новини", "Ком'юніті", "Інші"]
+
+        for line in lines:
+            for i in range(len(contents)):
+                if f"[{i+1}]" in line or f"{i+1} -" in line or f"{i+1}." in line:
+                    for cat in valid_categories:
+                        if cat.lower() in line.lower():
+                            results[i] = cat
+                            break
+
+        return results
+    except Exception as e:
+        print(f"Batch помилка: {e}")
+        return ["Інші"] * len(contents)
+
+
+def process_sheet(df: pd.DataFrame, sheet_name: str) -> pd.DataFrame:
+    """Обробляє один лист з батчингом"""
+    if 'content' not in df.columns:
+        print(f"  ⚠️ Лист '{sheet_name}' не має колонки 'content', пропускаємо")
+        df['category'] = "Інші"
+        return df
+
+    contents = df['content'].tolist()
+    total = len(contents)
+    print(f"  📊 Обробка {total} рядків...")
+
+    # Batch processing - по 5 елементів за запит
+    batch_size = 5
+    all_results = []
+
+    for i in range(0, total, batch_size):
+        batch = contents[i:i+batch_size]
+        batch_num = i // batch_size + 1
+        total_batches = (total + batch_size - 1) // batch_size
+
+        print(f"    Batch {batch_num}/{total_batches}...", end=" ")
+
+        results = classify_batch(batch, batch_size)
+        all_results.extend(results)
+
+        print(f"✓")
+
+        # Rate limiting: ~4 секунди між запитами для 15 RPM
+        if i + batch_size < total:
+            time.sleep(4)
+
+    df['category'] = all_results[:total]
+    return df
+
+
+def main():
+    print("=" * 50)
+    print("🚀 Класифікація контенту KSE через Gemini API")
+    print("=" * 50)
+
+    start_time = time.time()
+
+    # Читання Excel
+    print(f"\n📂 Читання файлу: {INPUT_FILE}")
+    xlsx = pd.ExcelFile(INPUT_FILE)
+    sheets = xlsx.sheet_names
+    print(f"   Знайдено листів: {len(sheets)}")
+
+    # Обробка кожного листа
+    result_sheets = {}
+
+    for sheet_name in sheets:
+        print(f"\n📋 Лист: '{sheet_name}'")
+        df = pd.read_excel(xlsx, sheet_name=sheet_name)
+
+        if sheet_name == SKIP_SHEET:
+            print("   ⏭️ Пропускаємо (без змін)")
+            result_sheets[sheet_name] = df
+        else:
+            result_sheets[sheet_name] = process_sheet(df, sheet_name)
+
+    # Збереження результату
+    print(f"\n💾 Збереження у: {OUTPUT_FILE}")
+    with pd.ExcelWriter(OUTPUT_FILE, engine='openpyxl') as writer:
+        for sheet_name, df in result_sheets.items():
+            df.to_excel(writer, sheet_name=sheet_name, index=False)
+
+    elapsed = time.time() - start_time
+    print(f"\n✅ Готово! Час виконання: {elapsed:.1f} секунд")
+    print("=" * 50)
+
+
+if __name__ == "__main__":
+    main()
+```
+
+### 4.3 Медіа-моніторинг
+
+Метод: мультиканальний збір згадок. Джерела даних: **Semantrum** — платформа медіа-моніторингу(вересень-листопад).
+
+-   Після Semantrum отримали папки по кожному із відділів КШЕ(University, GBS, Institute, Foundation), а у кожній із них поділ на місяці - 12 файлів у підсумку.
+-   `Claude Opus 4.5` був використаний щоб конвертувати ці 12 файлів звітності у єдиний "Flatenned excel sheet"
+-   Цей єдиний листок був завантажений у g-sheets та створені `pivot-tables` та графіки на базі нього.
+
+### 4.4 Аудит сайту
+
+Метод: структурний аналіз сторінок Сайти:
+
+-   kse.ua
+-   careers.kse.ua
+-   kse.foundation
+
+Що шукали:
+
+-   Кар'єрна сторінка
+-   Розділ «Про людей» / менеджмент
+-   КСВ (корпоративна соціальна відповідальність)
+-   Місія та цінності
+-   Бенефіти для працівників
+-   Шаблони вакансій
+
+Формат фіксації: [PDF-звіт](https://docs.google.com/document/d/1L0J5TpaooFt0UnXEb6-L21i9BKynKwc2oTW53NgWrNo/edit?tab=t.0#heading=h.e9v7sgw0k7sb) з описом знахідок
+
+## 5 Обмеження дослідження
+
+Що НЕ входило:
+
+-   Внутрішня комунікація KSE (Slack, email-розсилки)
+-   Відгуки співробітників на Glassdoor/DOU (окреме дослідження)
+-   Глибинні інтерв'ю з кандидатами
+-   Конкурентний аналіз інших роботодавців
+
+Можливі **bias**:
+
+-   Semantrum не покриває 100% медіа-простору
+-   Категоризація постів = суб'єктивна (LLMs are byest towards a prompt)
+-   Соцмережі показують публічний контент, не приватні групи
+
+## Вихідні матеріали
+
+Місцезнаходження: вони у папці [3 - Відкрита інформація з офіційних каналів](https://drive.google.com/drive/u/1/folders/1WttW1FC_St8Ck31aUMnIV8-YsqPRcd3y). Та містить наступні головні файли:
+
+-   **media_sources.xlsx** - Інвентаризація соцмереж + контент-аналіз постів
+-   **Бренд роботодавця КШЕ базуючись на вакансіях.pdf** - Аналіз вакансій та позиціонування.
+-   **Dashboard.xlsx** - Медіа-моніторинг (Semantrum) — KPI, динаміка, тональність.
